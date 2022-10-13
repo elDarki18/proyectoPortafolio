@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="contenedor-header">
+        <header>
+
+            <!-- ENCABEZADO PE -->
+            <div class="logo">
+                <a href="#"> DARKI </a>
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li> <a href="#inicio" onclick="seleccionar()"> INICIO </a> </li>
+                    <li> <a href="#sobremi" onclick="seleccionar()"> SOBRE MI </a> </li>
+                    <li> <a href="#skills" onclick="seleccionar()"> SKILLS </a> </li>
+                    <li> <a href="#curriculum" onclick="seleccionar()"> CURRICULUM </a> </li>
+                    <li> <a href="#portafolio" onclick="seleccionar()"> PORTAFOLIO </a> </li>
+                    <li> <a href="#contacto" onclick="seleccionar()"> CONTACTO </a> </li>
+                </ul>
+            </nav>
+
+            <div class="nav-responsive" onclick="monstrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </header>
+    </div>
+
+    <!-- INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="perfil">
+            </div>
+
+            <h1> RENATO AGUEDO </h1>
+            <h2> Ingeniero de Software - Estudiante </h2>
+            <div class="redes">
+                <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+                <a href="#"> <i class="fa-brands fa-discord"></i> </a>
+                <a href="#"> <i class="fa-brands fa-github"></i> </a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2> Sobre mi </h2>
+            <p><span> Hola, soy Renato Aguedo </span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et ut voluptatem ab consequatur perspiciatis vero, voluptate omnis nostrum illo iste neque facilis at deleniti, asperiores recusandae aut atque, accusamus nesciunt.</p>
+
+            <div class="fila">
+                <div class="col">
+                    <h3> Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong> Cumpleaños </strong>
+                            03-10-2002
+                        </li>
+                        <li>
+                            <strong> Teléfono </strong>
+                            922274380
+                        </li>
+                        <li>
+                            <strong> Email </strong>
+                            renatoaguedo@hotmail.com
+                        </li>
+                        <li>
+                            <strong> Website </strong>
+                            darkistore.com
+                        </li>
+                        <li>
+                            <strong> Dirección </strong>
+                            Av. Arriba Perú 335
+                        </li>
+                        <li>
+                            <strong> Posición </strong>
+                            <span> Support 5 </span> 
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h3> Intereses </h3>
+                    <div class="contenedor-intereses">
+
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>MUSICA</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <button>
+                Descargar CV <i class="fa-sharp fa-solid fa-file-arrow-down"></i>
+                <span class="overlay"> </span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2> Skills </h2>
+            <div class="fila">
+                <div class="col">
+                    <h3> Technical Skills </h3>
+
+                    <div class="skill">
+                        <span> Javascript </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span> 75%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span> HTML & CSS </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span> 90%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span> PYTHON </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span> 25%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span> NODE JS </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span> 30%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span> WORDPRESS </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span> 75%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col">
+                    <h3> Profesional Skills </h3>
+
+                    <div class="skill">
+                        <span> COMUNICACION </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span> 45%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span> TRABAJO EN EQUIPO </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span> 80% </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span> CREATIVIDAD </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span> 75%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span> DEDICACIÓN </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span> 100%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span> PROYECT MANAGEMENT </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span> 50%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2> Curriculum </h2>
+            <div class="fila">
+
+                <div class="col izquierda">
+                    <h3> Educación </h3>
+                    <div class="item izq">
+                        <h4> Ingenieria de Software </h4>
+                        <span class="lugar">Universidad Tecologica del Perú</span>
+                        <span class="fecha">2022 - 2027</span>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quis, porro distinctio animi alias at neque, quia dicta ab id doloremque iusto. Sit, accusamus. Nostrum a error consequatur nobis et. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3> Experiencia de trabajo </h3>
+                    <div class="item der">
+                        <h4> Front Developer </h4>
+                        <span class="lugar"> BADAZ SAC </span>
+                        <span class="fecha">2022 - xxxx </span>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quis, porro distinctio animi alias at neque, quia dicta ab id doloremque iusto. Sit, accusamus. Nostrum a error consequatur nobis et. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2> PORTAFOLIO </h2>
+            <div class="galeria">
+
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3> EJEMPLO</h3>
+                        <p> EJEMPLO </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTOS -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2> CONTACTO </h2>
+            <div class="fila">
+
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Número celular">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Asunto">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar mensaje <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Avenida Arriba Perú 335
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame al: 922274380
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: renatoaguedoxd@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+
+        <div class="redes">
+            <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+            <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+            <a href="#"> <i class="fa-brands fa-discord"></i> </a>
+            <a href="#"> <i class="fa-brands fa-github"></i> </a>
+            <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
